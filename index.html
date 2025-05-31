@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card | arribion technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div>
+    
+            <div class="upper-section">
+                <div>
+                    <img src="https://img.freepik.com/free-photo/close-up-portrait-professional-successful-young-african-american-man-red-hoodie-cross-arms-chest_176420-33867.jpg?uid=R186930602&ga=GA1.1.1704136953.1739000514&semt=ais_items_boosted&w=740" 
+                    alt="" class="profile-img">
+                </div>
+                <div>
+                    <h1>Arribion Bell</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> arribion@info.com</p>
+                    <span> <i class="fa-regular fa-phone"> </i> (254) 66-2002</span>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-phone"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+    
+            <div class="lower-section">
+                <div>
+                    <p>Lead Owner</p>
+                    <h2>Jeff Mutethia</h2>
+                </div>
+                <div>
+                    <p>company</p>
+                    <h2>Arribion Technologies</h2>
+                </div>
+                <div>
+                    <p>Job Title</p>
+                    <h2>Software Engineering</h2>
+                </div>
+                <div>
+                    <p>Annual revenue</p>
+                    <h2>$ 75,000</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <span>
+                <button>New</button>
+            </span>
+            <span>
+                <button>Open</button>
+            </span>
+            <span>
+                <button>In Progess</button>
+            </span>
+            <span>
+                <button>Open deals</button>
+            </span>
+            <span>
+                <button>Closed</button>
+            </span>
+        </div>
+        <p style="color: dodgerblue; text-align: center;">&copy; <span id="year"></span> Arribion Technologies. All Rights Reserved.</p>
+    </section>
+
+    <script>
+        let year = document.getElementById('year');
+        let yearObj = new Date()
+        year.innerHTML = yearObj.getFullYear()
+    </script>
+    
+
+    <script src="https://kit.fontawesome.com/3e1a4784df.js" crossorigin="anonymous"></script>
+</body>
+</html>

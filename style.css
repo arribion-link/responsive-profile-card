@@ -1,0 +1,122 @@
+/* -----------------RESET----------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 232, 232);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* ----------------------CARD---------------------- */
+
+section{
+    background-color: white;
+    box-shadow: 1px 1px 25px gray;
+    margin: 1em;
+    padding: 1em;
+}
+
+.upper-section{
+    text-align: center;
+    padding: 2em;
+}
+
+.profile-img{
+    width: 100%;
+    /* height: auto; */
+    max-width: 15em;
+    border-radius: 10px;
+    border: 3px solid rgb(64, 255, 0);
+}
+
+.icons {
+    margin-top: 1em;
+}
+
+.icons i{
+    display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        margin: 0.5em;
+        font-size: 1em;
+}
+
+.icons i:hover{
+    background-color: aquamarine;
+}
+
+/* ---------MIDDLE SECTION-------------- */
+
+.lower-section{
+    text-align: center;
+
+}
+
+.lower-section div{
+    border: 2px solid dodgerblue;
+    margin: 0.1em;
+    padding: 2em;
+    gap: 3px;
+}
+
+/* --------------------BOTTOM SECTION----------------- */
+
+.bottom-section {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    
+}
+
+.bottom-section span {
+    border: 1px solid darkorange;
+    padding: 0.5em;
+    display: flex;
+}
+
+.bottom-section span button {
+    padding: 1em;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.bottom-section span button:hover {
+    background-color: #e0e0e0;
+}
+
+@media  (min-width:768px) {
+    .lower-section {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+.upper-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    padding: 2em;
+    margin: 2em;
+}
+.bottom-section {
+    max-width: 800px;
+}
+
+}
