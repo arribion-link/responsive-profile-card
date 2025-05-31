@@ -110,7 +110,8 @@ section{
     }
 .upper-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 12em;
     text-align: start;
     padding: 2em;
     margin: 2em;
